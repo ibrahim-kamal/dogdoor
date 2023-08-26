@@ -7,11 +7,15 @@ namespace dogDoor.Classes
 {
     public  class Remote
     {
+        public static System.Timers.Timer _timer;
+        public static bool timerFinishedEvent = false;
+
         private DogDoor door { get; set; }
 
         public Remote(DogDoor door) {
-            this.door = door;   
-        }
+            this.door = door;
+            _timer = new System.Timers.Timer();
+    }
 
 
         public void pressButton() {
@@ -22,23 +26,23 @@ namespace dogDoor.Classes
             }
             else {
                 door.Open();
-                Task task = Task.Run(() =>
-                {
-                    // demonstrate flexibility of anonymous methods
-                    while (true)
-                    {
-                        
-                    }
-                }
-                );
-                if (task.Wait(TimeSpan.FromSeconds(5)))
-                { }
-                else {
-                    door.close();
-                }
+                _timer.Interval = 5000; // Set the interval in milliseconds
+                _timer.Elapsed += new System.Timers.ElapsedEventHandler(closeDoor);
+                _timer.Enabled = true; // Enable the timer
+                _timer.Start();
 
-                
+
+
             }
+
+            
+        }
+
+        private void closeDoor(object? sender, System.Timers.ElapsedEventArgs e) {
+            _timer.Stop();
+            door.close();
+            timerFinishedEvent = true;
+
         }
     }
 }

@@ -10,6 +10,7 @@ namespace dogDoor
 {
     public class dogDoor
     {
+
         public static void Main() {
 
 
@@ -22,8 +23,16 @@ namespace dogDoor
             remote.pressButton();
             Console.WriteLine("\nFido has gone outside...");
             Console.WriteLine("\nFido’s all done...");
-            remote.pressButton();
             Console.WriteLine("\nFido’s back inside...");
+
+            Task endApp = Task.Run(() => {
+                while (!Remote.timerFinishedEvent) ;
+                
+            });
+
+            endApp.Wait();
+
+
         }
     }
 }
