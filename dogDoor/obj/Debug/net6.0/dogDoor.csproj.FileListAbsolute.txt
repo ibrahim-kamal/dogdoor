@@ -1,0 +1,15 @@
+C:\Users\ibrahim\source\repos\dogDoor\dogDoor\bin\Debug\net6.0\dogDoor.exe
+C:\Users\ibrahim\source\repos\dogDoor\dogDoor\bin\Debug\net6.0\dogDoor.deps.json
+C:\Users\ibrahim\source\repos\dogDoor\dogDoor\bin\Debug\net6.0\dogDoor.runtimeconfig.json
+C:\Users\ibrahim\source\repos\dogDoor\dogDoor\bin\Debug\net6.0\dogDoor.dll
+C:\Users\ibrahim\source\repos\dogDoor\dogDoor\bin\Debug\net6.0\dogDoor.pdb
+C:\Users\ibrahim\source\repos\dogDoor\dogDoor\obj\Debug\net6.0\dogDoor.csproj.AssemblyReference.cache
+C:\Users\ibrahim\source\repos\dogDoor\dogDoor\obj\Debug\net6.0\dogDoor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibrahim\source\repos\dogDoor\dogDoor\obj\Debug\net6.0\dogDoor.AssemblyInfoInputs.cache
+C:\Users\ibrahim\source\repos\dogDoor\dogDoor\obj\Debug\net6.0\dogDoor.AssemblyInfo.cs
+C:\Users\ibrahim\source\repos\dogDoor\dogDoor\obj\Debug\net6.0\dogDoor.csproj.CoreCompileInputs.cache
+C:\Users\ibrahim\source\repos\dogDoor\dogDoor\obj\Debug\net6.0\dogDoor.dll
+C:\Users\ibrahim\source\repos\dogDoor\dogDoor\obj\Debug\net6.0\refint\dogDoor.dll
+C:\Users\ibrahim\source\repos\dogDoor\dogDoor\obj\Debug\net6.0\dogDoor.pdb
+C:\Users\ibrahim\source\repos\dogDoor\dogDoor\obj\Debug\net6.0\dogDoor.genruntimeconfig.cache
+C:\Users\ibrahim\source\repos\dogDoor\dogDoor\obj\Debug\net6.0\ref\dogDoor.dll
