@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Timers;
 using System.Threading.Tasks;
+using System.Threading;
+
 namespace dogDoor.Classes
 {
     public  class Remote
@@ -26,6 +28,7 @@ namespace dogDoor.Classes
             }
             else {
                 door.Open();
+                timerFinishedEvent = false;
                 _timer.Interval = 5000; // Set the interval in milliseconds
                 _timer.Elapsed += new System.Timers.ElapsedEventHandler(closeDoor);
                 _timer.Enabled = true; // Enable the timer
@@ -40,6 +43,7 @@ namespace dogDoor.Classes
 
         private void closeDoor(object? sender, System.Timers.ElapsedEventArgs e) {
             _timer.Stop();
+            _timer.Enabled = false;
             door.close();
             timerFinishedEvent = true;
 
